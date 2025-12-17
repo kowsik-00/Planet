@@ -1,0 +1,145 @@
+<%-include('partials/header')%>
+<div class="page">
+    <div class="top">
+        <div class="image">
+            <img src="<%=url%>" alt="">
+        </div>
+        <dic class="details">
+            <h1><%=title%></h1>
+            <p class="about">
+                <%=content%>
+            </p>
+            <div class="three">
+                <p class="overview box" ><span>01</span>
+                    overview
+                </p>
+                
+                <p class='internalSturture box '>
+                    <span>02</span>
+                    internal structure
+                </p>
+                <p class="surface box">
+                    <span>03</span>
+                    surface geology
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="rotationTime BOX">
+            <span>ROTATION TIME</span>
+            <%=rotate%>
+        </div>
+        <div class="revolutionTime BOX">
+            <span>REVOLUTION TIME</span>
+            <%=revolve%>
+        </div>
+        <div class="radius BOX" >
+            <span>RADIUDS</span>
+            <%=radi%>
+        </div>
+        <div class="averageTemp BOX">
+            <span>AVERAGE TEMP</span>
+            <%=temp%>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    //main pages
+    document.getElementById('mercurylink').addEventListener('click', function() {
+        window.location.href = "/mercury";
+    });
+    document.getElementById('venuslink').addEventListener('click', function() {
+    window.location.href = "/venus";
+});
+
+document.getElementById('earthlink').addEventListener('click', function() {
+    window.location.href = "/earth";
+    fe
+});
+
+document.getElementById('marslink').addEventListener('click', function() {
+    window.location.href = "/mars";
+});
+
+document.getElementById('jupiterlink').addEventListener('click', function() {
+    window.location.href = "/jupiter";
+});
+
+document.getElementById('saturnlink').addEventListener('click', function() {
+    window.location.href = "/saturn";
+});
+
+document.getElementById('uranuslink').addEventListener('click', function() {
+    window.location.href = "/uranus";
+});
+
+document.getElementById('neptunelink').addEventListener('click', function() {
+    window.location.href = "/neptune";
+});
+
+document.addEventListener("DOMContentLoaded",()=>{
+    console.log(document.querySelector(".internalSturture"));
+    document.querySelector(".overview").id="<%= link %>";
+    document.querySelector(".internalSturture").id="<%= link1 %>";
+    document.querySelector(".surface").id="<%= link2 %>";
+    
+    let link=document.querySelector("#<%= link %>");
+    let link1=document.querySelector("#<%= link1 %>");
+    let link2=document.querySelector("#<%= link2 %>");
+
+    link.addEventListener('click', function() {
+        window.location.href = "/<%= link %>";
+    });
+    link1.addEventListener('click', function() {
+        window.location.href = "/<%= link1 %>";
+    });
+    link2.addEventListener('click', function() {
+        window.location.href = "/<%= link2 %>";
+    });
+
+    document.querySelector("#<%= colorlink %>").style.backgroundColor="<%= color %>"
+    
+    link.addEventListener("mouseenter",()=>{
+        link.style.backgroundColor ="#FFFFFF3f"; 
+        // link.style.borderColor ="<%= color %>"; 
+    })
+    link.addEventListener("mouseleave",()=>{
+        link.style.backgroundColor ="#070724";
+        document.querySelector("#<%= colorlink %>").style.backgroundColor="<%= color %>"
+    })
+    
+    link1.addEventListener("mouseenter",()=>{
+        link1.style.backgroundColor ="#FFFFFF3f"; 
+        // link1.style.borderColor ="<%= color %>"; 
+    })
+    link1.addEventListener("mouseleave",()=>{
+        link1.style.backgroundColor ="#070724"; 
+        document.querySelector("#<%= colorlink %>").style.backgroundColor="<%= color %>"
+        // link1.style.borderColor ="#FFF"; 
+    })
+
+    link2.addEventListener("mouseenter",()=>{
+        link2.style.backgroundColor ="#FFFFFF3f"; 
+        // link2.style.borderColor ="<%= color %>"; 
+    })
+    link2.addEventListener("mouseleave",()=>{
+        link2.style.backgroundColor ="#070724";
+        document.querySelector("#<%= colorlink %>").style.backgroundColor="<%= color %>"
+    })
+})
+
+
+document.querySelectorAll(".right>p").forEach((element)=>{
+    element.addEventListener("mouseenter",()=>{
+        element.style.borderTop="4px solid <%= color %>";
+    })
+    element.addEventListener("mouseleave",()=>{
+        element.style.borderTop="4px solid transparent";
+    })
+})
+
+</script>
+</html>

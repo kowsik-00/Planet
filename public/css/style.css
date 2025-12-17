@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    /* background: url("/image/background-stars.svg"); */
+}
+header{
+    display: flex;
+    background-color: #070724;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px 30px; */
+    color: #FFFFFF;
+    /* font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal; */
+  
+}
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 30px;
+
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-right:30px;
+
+}
+.right>p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    color: #ffffffb6;
+    border-top: 4px solid transparent;
+    padding: 23px 0px;
+    cursor: pointer;
+}
+
+.page{
+    /* background-color: #070724; */
+    background:url("https://planetfacts-smoky.vercel.app/assets/background-stars.svg");
+    background-color: #070724;
+}
+.top{
+    height: 37rem;
+    display: flex;
+}
+.image{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.details{
+    width: 25%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    gap: 2rem;
+}
+h1{
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.overview,.internalSturture,.surface{
+    border: 1px solid #ffffffb4;
+    padding: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    /* border: #FFFFFF; */
+}
+.about{
+    font-size: 1.1rem;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.three{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.bottom{
+    background-color: #070724;
+    height: 13.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.BOX{
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    width: 15%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    /* align-items:; */
+    justify-content: center;
+}
+
+
+.BOX > span{
+    font-family: "Google Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color: #ffffffb4;
+    padding: 0 40px 0 0;
+}
+
+span{
+    font-family: "Google Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #ffffffb4;
+    padding: 0 40px 0 0;
+}
+
+p{
+    transition: background-color .1s ease;
+}
